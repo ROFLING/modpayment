@@ -1,0 +1,128 @@
+/* Header Styles */
+
+.header {
+  position: fixed;
+  width: 1154px;
+  height: 69px;
+  left: calc(50% - 1154px/2);
+  top: 31px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: #FFFFFF;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 225.92px;
+  height: 33.08px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.navigation button {
+  font-family: 'Zx Gamut';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.316px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+  color: #1E1E1E;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+  position: relative;
+  padding: 8px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+.navigation button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navigation button:active {
+  transform: scale(0.95);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgba(30, 30, 30, 0.05);
+}
+
+.connect {
+  width: 167px;
+  height: 43px;
+  background: #1E1E1E;
+  border-radius: 21.5px;
+  font-family: 'Zx Gamut';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.316px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+.connect:hover {
+  background-color: #333333;
+}
+
+.connect:active {
+  background-color: #000000;
+}
+
+.connect:focus {
+  outline: none;
+}
+
+.connect:focus-visible {
+  outline: none;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    width: 100%;
+    left: 0;
+    padding: 0 10px;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .navigation button {
+    margin: 0 5px;
+  }
+
+  .connect {
+    width: auto;
+    padding: 0 20px;
+  }
+}
+
+@font-face {
+  font-family: 'Zx Gamut';
+  src: url('./assets/fonts/ZxGamut-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
