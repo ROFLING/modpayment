@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import logoImg from './assets/images/logo.png';
 
 function Header() {
   const scrollToTop = () => {
@@ -23,7 +24,7 @@ function Header() {
   return (
     <header className="header">
       <div className="logo" onClick={scrollToTop} style={{ cursor: 'pointer' }}>
-        <img src="/src/assets/images/logo.png" alt="Logo" />
+        <img src={logoImg} alt="Logo" />
       </div>
       <nav className="navigation">
         <button onClick={scrollToProduct}>Product</button>
